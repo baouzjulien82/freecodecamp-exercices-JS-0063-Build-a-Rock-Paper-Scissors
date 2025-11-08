@@ -1,1 +1,1 @@
-<strong>JavaScript DOM Manipulation and Events</strong> - freecodecamp-exercices-JS-0063-Build-a-Rock-Paper-Scissors - Exercice à terminer
+<strong>JavaScript DOM Manipulation and Events</strong> - freecodecamp-exercices-JS-0063-Build-a-Rock-Paper-Scissors - https://baouzjulien82.github.io/freecodecamp-exercices-JS-0063-Build-a-Rock-Paper-Scissors/
