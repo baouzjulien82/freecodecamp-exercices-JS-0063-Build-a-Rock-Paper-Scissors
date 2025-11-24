@@ -4,84 +4,66 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  //border: 1px solid
 }
 
 :root {
-  --very-dark-blue: #0a0a23;
-  --white: #ffffff;
-  --yellow: #f1be32;
-  --golden-yellow: #feac32;
+--font-de-page-dark: rgb(52, 52, 52);
+--couleur-du-text: rgb(244, 241, 241);
+--couleur-de-la-boite: rgb(101, 72, 101);
+--touches: rgb(122, 122, 122);
 }
 
 body {
-  background-color: var(--very-dark-blue);
-  text-align: center;
-  color: var(--white);
+  background-color: var(--font-de-page-dark);
+  color: var(--couleur-du-text);
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-h1 {
-  margin: 15px 0 20px;
-}
-
-.btn {
-  cursor: pointer;
-  width: 100px;
-  margin: 10px;
-  color: var(--very-dark-blue);
-  background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border-color: var(--golden-yellow);
-  border-width: 3px;
-}
-
-.btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
-}
-
-.rules-container {
-  padding: 10px 0;
+#drum-machine{
+  width: 350px;
+  height: 450px;
   margin: auto;
-  border-radius: 15px;
-  border: 5px solid var(--yellow);
-  background-color: var(--white);
-  color: var(--very-dark-blue);
+  background-color: var(--couleur-de-la-boite);
+  border-radius: 8px;
 }
 
-.rules-container ul {
-  list-style-type: none;
+#pad-bank{
+  width: 80%;
+  padding-top: 20px;
+  margin: 10% auto;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
 
-.rules-container p {
-  margin: 10px 0;
-}
-
-@media (min-width: 760px) {
-  .rules-container {
-    width: 60%;
-  }
-}
-
-.score-container {
+.drum-pad{
+  background-color: var(--touches);
   display: flex;
-  justify-content: space-around;
-  margin: 30px 0;
-  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.score {
-  font-weight: 500;
+#display{
+  background-color: var(--touches);
+  width: 80%;
+  height: 50px;
+  line-height: 50px;
+  margin: auto;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.results-container {
-  font-size: 1.3rem;
-  margin: 15px 0;
-}
-
-#winner-msg {
-  margin-top: 25px;
-}
-
-#reset-game-btn {
-  display: none;
-  margin: 20px auto;
+.volume-slider{
+  width: 80%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
